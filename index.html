@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta chartset="utf-8">
+    <title>TestingVSCode</title>
+
+    <style>
+        #TitlePage {
+            position: fixed;
+            left: 10px;
+            top: -40px;
+            font-size: 70px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            z-index: 3;
+            color: white;
+        }
+        
+        .headbar {
+            position: fixed;
+            width: 1440px;
+            height: 100px;
+            top: 100px;
+            left: 0px;
+            border-radius: 0%;
+            z-index: 2;
+        }
+        
+        #outerSpace {
+            position: absolute;
+            width: 1610px;
+            left: -10px;
+            z-index: 1;
+        }
+        
+        #firstNameDisplayed {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            width: 1440px;
+            left: 0px;
+            top: 400px;
+            text-align: center;
+            z-index: 2;
+            font-family: fantasy;
+            font-size: 100px;
+            font-weight: 100;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="TitlePage">S I</h1>
+    <h1 id="firstNameDisplayed">Shohruh Ismatulla</h1>
+    <img src="https://c.tenor.com/mDqYbkeOZSIAAAAC/galaxy.gif" id="outerSpace">
+
+
+
+    <script>
+        var mainHeading = document.createElement("div")
+        mainHeading.className = "headbar";
+        mainHeading.style.backgroundColor = "black";
+        mainHeading.style.left = "0px";
+        mainHeading.style.top = "0px";
+
+        document.body.appendChild(mainHeading);
+
+        var galaxy = document.createElement("img");
+
+        galaxy.style.classNmae = "Galaxy";
+        galaxy.style.left = "-10px";
+        galaxy.style.top = "500px";
+
+        document.body.appendChild(galaxy);
+    </script>
+
+</body>
+
+</html>
